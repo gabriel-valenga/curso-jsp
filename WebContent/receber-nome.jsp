@@ -7,13 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<%@ page isErrorPage="true" %>
 	<%= "Name received = " + request.getParameter("nome") %> <!-- Tag declarativa -->
 	<%! int cont = 2; %> <!--  Tag expressao -->
 	</br>
 	<%= cont %>
 	
-	<% response.sendRedirect("https://ogol.com.br"); %> <!--  Objeto implicito -->
+	 <% response.sendRedirect("https://ogol.com.br"); %> <!--  Objeto implicito --> 
 
+	<%= exception %>
 </body>
 </html>
