@@ -13,7 +13,7 @@
 	</br>
 	<%= cont %>
 	
-	<% response.sendRedirect("https://ogol.com.br"); %> <!--  Objeto implicito -->
+	<%= session.getAttribute("curso")%>
 
 </body>
 </html>

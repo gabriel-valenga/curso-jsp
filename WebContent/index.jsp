@@ -8,13 +8,16 @@
 </head>
 <body>
 	<h1> "Welcome to JSP course!"</h1>
-	<% out.print("Your success guaranted"); %>
+	<%= "Your success guaranted" %>
 	
-	<form action="receber-nome.jsp">
+	<form action="receber-nome2.jsp">
 		<input type="text" id="nome" name="nome">
 		<input type="submit" value="Submit" />
 		 
 	
 	</form>
+	<%= "Estado: " + application.getInitParameter("estado") %>
+	
+	<%session.setAttribute("curso", "cursojsp"); %>
 </body>
 </html>
