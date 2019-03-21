@@ -14,6 +14,8 @@
 	<%= cont %>
 	
 	<%= session.getAttribute("curso")%>
+	
+	<% request.getParameter("paramforward"); %>
 
 </body>
 </html>
